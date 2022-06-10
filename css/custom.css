@@ -1,0 +1,149 @@
+html body {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.5;
+	
+	font-family: Verdana,Geneva,sans-serif; 
+}
+
+.parallax {
+	/*
+	background-image: url('img/Citw_Render_3.png');
+	*/
+	background-image: linear-gradient(to bottom right, #42f, #1f5);
+
+	/* Full height */
+	height: 100% ; 
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.divider {
+	height: 0.5em;
+	background-image: linear-gradient(to bottom left, #345, #234);
+}
+
+.parallax-work {
+	background-image: linear-gradient(to bottom left, #221, #122);
+
+	/* Full height */
+	height: 100% ; 
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bottom-bg {
+	/*
+	background-image: url('img/Citw_Render_3.png');
+	*/
+	background-image: linear-gradient(to bottom right, #42f, #1f5);
+	/*
+	parallax
+	*/
+	height: 100% ; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+.bg-dark {
+	background-image: linear-gradient(to bottom left, #304055aa, #253545aa);
+}
+
+.showcase-container {
+
+}
+
+#loadWebGL {
+	transform: scale(1, 0);
+	transition: 0.3s;
+}
+
+#loadWebGL.active {
+	transform: scale(1);
+}
+
+.unity-loader {
+	margin-left: auto;
+	margin-right: auto;
+	transition: 2s;
+	text-align:center;
+}
+
+.unity-loader.loaded {
+	transition: 2s;
+}
+
+.carousel-indicators {
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+.showcase-container .carousel img {
+	height: 20em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.padding-bottom-sm {
+	padding-bottom: 2em;
+}
+.padding-bottom-m {
+	padding-bottom: 10em;
+}
+.padding-bottom-lg {
+	padding-bottom: 20em;
+}
+
+.padding-top-sm {
+	padding-top: 2em;
+}
+.padding-top-m {
+	padding-top: 10em;
+}
+.padding-top-lg {
+	padding-top: 20em;
+}
+
+
+.margin-bottom-sm {
+	margin-bottom: 2em;
+}
+.margin-bottom-m {
+	margin-bottom: 10em;
+}
+.margin-bottom-lg {
+	margin-bottom: 20em;
+}
+
+.margin-top-sm {
+	margin-top: 2em;
+}
+.margin-top-m {
+	margin-top: 10em;
+}
+.margin-top-lg {
+	margin-top: 20em;
+}
+
+
+footer {
+	background-image: linear-gradient(to bottom, #345, #234);
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
