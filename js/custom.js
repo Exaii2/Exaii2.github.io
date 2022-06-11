@@ -1,3 +1,22 @@
+var iframeLink = "unity/webgl";
+var webGLloadButton;
+var iframeHolder;
+
+function initUnityLoad() {
+	webGLloadButton = $("#loadWebGL");
+	iframeHolder = $("#unity-loader");
+	
+	document.getElementById("loadWebGL").addEventListener("click", function() {
+		var iframeLink = document.createElement("iframe");
+
+		var iframe = $("<iframe src='" + iframeLink + "'></iframe>");
+		iframeHolder.append(iframe);
+
+		webGLloadButton.removeClass("active");
+	});
+}
+
+
 window.onload = function() {
 	const canvas = document.querySelector("#glCanvas");
 	// Initialize the GL context
@@ -21,6 +40,8 @@ window.onload = function() {
 			ctx.drawImage(background,0,0);   
 	}
 	*/
+	
+	initUnityLoad();
 }
 
 
