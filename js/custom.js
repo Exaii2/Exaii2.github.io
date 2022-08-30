@@ -1,7 +1,21 @@
 var iframeLink = "unity/webgl";
 var webGLloadButton;
 var iframeHolder;
+var parallaxX, parallaxY;
 
+window.onload = function() {
+	const parallax = document.querySelector("#parallax_1");
+	// webGLInit(); // TODO: Clean up webgl code
+
+	initUnityLoad(); // TODO: Build Unity Web Showcase.
+
+	// Parallax script - else standard css parallax behaviour.
+	parallaxX = 0;
+	parallaxY = 0;
+	// backgroundImageShift(); // TODO: Fix background shift.
+}
+
+/// Use this to load my unity web showcase
 function initUnityLoad() {
 	webGLloadButton = $("#loadWebGL");
 	iframeHolder = $("#unity-loader");
@@ -16,34 +30,42 @@ function initUnityLoad() {
 	});
 }
 
+/// Not yet fully implemented
+/// Will translate the background image parallax - once correctly implemented.
+function backgroundImageShift() {
+	parallax.addEventListener("mousemove",
+		function(e){
+			// TODO: Extract current position
+			var x = ((e.clientX)*parallaxX)+"px";
+			var y = ((e.clientY)*parallaxY)+"px";
+			parallax.style.backgroundPosition = x + " " + y;
 
-window.onload = function() {
+		});
+}
+
+/*
+// THIS PART IS FOR WEBGL.
+// THIS IS NOT YET IMPLEMENTED FOR PORTFOLIO.
+
+function webGLInit()
+{
 	const canvas = document.querySelector("#glCanvas");
 	// Initialize the GL context
 	const gl = canvas.getContext("webgl2");
-
 	// Only continue if WebGL is available and working
 	if (gl === null) {
 		alert("Unable to initialize WebGL. Your browser or machine may not support it.");
 		return;
 	}
 
-	// Set clear color to black, fully opaque
 	gl.clearColor(0.0, 0.0, 0.0, 1.0);
-	// Clear the color buffer with specified clear color
 	gl.clear(gl.COLOR_BUFFER_BIT);
-
-	/*
 	var background = new Image();
-		background.src = "http://www.samskirrow.com/background.png";
+		background.src = "/img/imageSrc.png";
 		background.onload = function(){
 			ctx.drawImage(background,0,0);   
 	}
-	*/
-	
-	initUnityLoad();
 }
-
 
 // Initialize a shader program, so WebGL knows how to draw our data
 function initShaderProgram(gl, vsSource, fsSource) {
@@ -84,3 +106,4 @@ function loadShader(gl, type, source) {
 
   return shader;
 }
+*/

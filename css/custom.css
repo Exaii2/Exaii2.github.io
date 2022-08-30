@@ -8,18 +8,33 @@ html body {
 
 .parallax {
 	/*
-	background-image: url('img/Citw_Render_3.png');
+	background-image: url('img/Render.png');
 	*/
 	background-image: linear-gradient(to bottom right, #42f, #1f5);
 
-	/* Full height */
-	height: 100% ; 
-
-	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+
+	/* width: 100vw; */
+	height: 100vh;
+	top: 0;
+	left: 0;
+}
+
+.parallax-background {
+	background-image: linear-gradient(to bottom right, #42f, #1f5);
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
 }
 
 .divider {
@@ -27,13 +42,10 @@ html body {
 	background-image: linear-gradient(to bottom left, #345, #234);
 }
 
+/*
 .parallax-work {
 	background-image: linear-gradient(to bottom left, #221, #122);
-
-	/* Full height */
 	height: 100% ; 
-
-	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -41,20 +53,14 @@ html body {
 }
 
 .bottom-bg {
-	/*
-	background-image: url('img/Citw_Render_3.png');
-	*/
 	background-image: linear-gradient(to bottom right, #42f, #1f5);
-	/*
-	parallax
-	*/
 	height: 100% ; 
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	
 }
+*/
 
 .bg-dark {
 	background-image: linear-gradient(to bottom left, #304055aa, #253545aa);
@@ -135,7 +141,6 @@ html body {
 .margin-top-lg {
 	margin-top: 20em;
 }
-
 
 footer {
 	background-image: linear-gradient(to bottom, #345, #234);

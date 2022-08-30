@@ -1,8 +1,8 @@
 <!doctype html>
-
+<!-- -->
 <html lang="en">
   <head>
-	<title>Portfolio</title>
+	<title>Portfolio | Adrian Vögtle | Technical Art</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap: jQuery > Popper.js > Bootstrap -->
@@ -16,25 +16,40 @@
 <body> 
 	<!--
 		Ye, I know, I could have used a CMS. I am more than aware they exist.
-		I wanted to have more control here, and updating this content here seems more productive to me.
+		I wanted to have more control here, and updating this content in the most direct way seems more productive to me.
+		I have no external links here.
 	-->
 	
-	<canvas id="glCanvas" width="1000" height="600"></canvas>
-	
 	<!--
+		I had some plans to implement a canvas for some more visual eye candy. But this will have to wait.
+		<canvas id="glCanvas" width="1000" height="600"></canvas>
+	-->
+	
 	<div class="parallax padding-top-m padding-bottom-m">
-			<div class="container mt-6 shadow-lg margin-bottom-lg rounded bg-body" id="page-intro">
+			<!--
+				Redesign this WHEN enough content.
+				<div class="parallax-background" id="parallax_1">
+				</div>
+			-->
+			
+			<div class="container bg-dark" id="wip-warning">
+				<h2 class="text-white-50 text-center my-3">
+					This portfolio page is not fully implemented yet. Regular updates pending.
+				</h2>
+			</div>
+	
+			<div class="container mt-6 shadow-lg margin-bottom-m rounded bg-body" id="page-intro">
 				<div class="intro bg-dark row">
 					<div>
 						<h2 class="text-white-50 text-center my-3">
-						Hi there! I am Adrian and I create
+						Hi! I am Adrian and I create
 						</h2>
 					</div>
 					<div id="aboutme" class="carousel slide vw-50" data-ride="carousel">
 						<div class="carousel-inner mb-3">
 							<div class="item text-white-50 text-center active">
 								<h1>
-									3D GRAPHICS
+									3D CHARACTERS
 								</h1>
 							</div>
 							<div class="item text-white-50 text-center">
@@ -54,48 +69,63 @@
 				
 			</br>
 
-			<div class="container shadow-lg space-bottom-m rounded bg-body">
+			<div class="container shadow-lg space-bottom-m rounded bg-body my-3">
 				<div class="col bg-dark row">
 					<p class="text-white-50 text-center my-3">
-						I mainly work with Unity and Blender.
+						I mainly work with Blender, Unity and Krita.
 					</p>
 					<p class="text-white-50 text-center">
-						I focus on 3D Characters, Shaders and VFX.
+						My focus on 3D Characters, Shaders and VFX.
 					</p>
+					<div class="margin-bottom-sm">
+					</div>
 					<p class="text-white-50 text-center">
 						I am fluent in
 					</p>
 					<div id="experience" class="carousel slide vw-50" data-ride="carousel">
 						<div class="carousel-inner mb-3">
+							<div class="item text-white-50 text-center">
+								<h2>
+									Generative Modelling (Blender GeoNodes)
+								</h2>
+							</div>
+							<div class="item text-white-50 text-center">
+								<h2>
+									Shader Node Systems (Unity + Blender)
+								</h2>
+							</div>
 							<div class="item text-white-50 text-center active">
 								<h2>
-									C#
+									C#, Javascript (and also a pinch of Python)
 								</h2>
 							</div>
 							<div class="item text-white-50 text-center">
 								<h2>
-									Unity Shadergraph
+									Visual Effect Graph (Unity)
 								</h2>
 							</div>
 							<div class="item text-white-50 text-center">
 								<h2>
-									Unity Visual Effect Graph
-								</h2>
-							</div>
-							<div class="item text-white-50 text-center">
-								<h2>
-									HTML, CSS, JS
+									HTML, CSS
 								</h2>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			
+			<div class="container shadow-lg space-bottom-m rounded bg-body">
+				<div class="col bg-dark row">
+					<p class="text-white-50 text-center my-3">
+						Check out my works below. Over time, I will also post a resource repositories here. Procedural.
+					</p>
+				</div>
+			</div>
 	</div>
 
 	<div class="divider shadow-lg">
+		
 	</div>
-	-->
 
 	<div class="parallax-work padding-top-sm padding-bottom-sm">
 		<!--
@@ -115,7 +145,8 @@
 
 		<div class="container shadow-lg space-bottom-sm rounded bg-body">
 			<div class="finishedWork row">
-
+					
+					<!--
 					<div class="showcase-container container col bg-dark">
 						<div id="showCase1" class="carousel slide" data-ride="carousel" data-interval="false">
 							<ol class="carousel-indicators">
@@ -192,6 +223,7 @@
 							It also sits on my desk.
 						</p>
 					</div>
+					-->
 
 			</div>
 		</div>
@@ -199,35 +231,108 @@
 		<div class="container mt-3 pd-3">
 			<div class="bg-dark row">
 				<p class="text-white-50 text-center my-3">
-					In case your device does not have a limited bandwidth and/or battery, you can also check out this interactive demo.
+					In case of limited bandwidth or device battery, check out this demo:
 				</p>
 				<button id="loadWebGL" class="px-6 btn btn-primary py-3 active" type="button" value="loadWebGL">
-					Load WebGL [unset]
+					Load WebGL [TODO: Unset]
 				</button>
 				<div id="unity-loader" class="unity-loader col">
 				</div>
 			</div>
 		</div>
 
-		<div class="container mt-3 pd-6">
+		<div class="container mt-3 pd-3">
 			<div class="bg-dark row">
 				<p class="text-white-50 text-center my-3">
-					Node_2
+					Some Github Ressources by me:
 				</p>
+				<div>
+					<img class="A"> </img>
+					<p class="text-white-50 text-center my-3">
+						<a href="NULL" class="text-center my-3">
+							Geonodes creature designer [TODO: Create repo]
+						</a>
+					</p>
+					<p class="text-white-50 text-center my-3">
+						Made with Blender 3.3a.
+					</p>
+					<p class="text-white-50 text-center my-3">
+						Contains a small blender scene, with a setup of nodes and modifiers to quickly prototype creatures.
+					</p>
+				</div>
+				<div>
+					<img class="A"> </img>
+					<p class="text-white-50 text-center my-3">
+						<a href="NULL" class="text-center my-3">
+							BY-GEN Content Pack 1 [TODO: Create repo]
+						</a>
+					</p>
+					<p class="text-white-50 text-center my-3">
+						Made with Blender 3.3a and Curtis Holt's BY-GEN add-on.
+					</p>
+					<p class="text-white-50 text-center my-3">
+						An add-on for the blender add-on BY-GEN, made by Curtis Holt.
+						This pack features the mesh-effects: Bismuth, X, Y, Z.
+					</p>
+				</div>
 			</div>
 		</div>
+
+		<div class="container mt-3 pd-3">
+			<div class="bg-dark row">
+				<p class="text-white-50 text-center my-3">
+					About me.
+				</p>
+				<p class="text-white-50 text-center my-3">
+					I am a nerd that enjoys creating computer graphics.
+				</p>
+				<div>
+					<p class="text-white-50 text-center my-3">
+						My workflow usually uses procedural methods, often involving noises.
+						I enjoy designing monsters. Sometimes I print them, too.
+					</p>
+					<p class="text-white-50 text-center my-3">
+						My rough timeline: 
+					</p>
+					<p class="text-white-50 text-center my-3"> [ENDDATE] Bachelor of Arts in 'Medienkonzeption' in Furtwangen</p>
+					<p class="text-white-50 text-center my-3"> [ENDDATE] Master of Science in 'Medieninformatik' in Furtwangen</p>
+					<p class="text-white-50 text-center my-3"> [DATE-SEPT 2022] Co-Founder of <a href="NULL">'Couch in the Woods' [TODO: Link]</a> </p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container mt-3 pd-3">
+			<div class="bg-dark row">
+				<p class="text-white-50 text-center my-3">
+					Get in touch:
+				</p>
+				<p class="text-white-50 text-center my-3">
+					DISCORD LINK.
+				</p>
+			</div>
+			<div class="bg-dark row">
+				<p class="text-white-50 text-center my-3">
+					See my other work:
+				</p>
+				<p class="text-white-50 text-center my-3">
+					ARTSTATION LINK.
+				</p>
+			</div>		</div>
 	</div>
 
-	<!--
+<!--
 	<footer>
 		<div class="container pd-3 ">
 			<div class="row">
 				<p class="text-white-50 text-center my-3">
-					Node_3
+					TODO: 
+					Legal Stuff.
+					Impressum. - Discord?
+					Externe Links.
 				</p>
 			</div>
 		</div>
 	</footer>
-	-->
+-->
 </body>
 </html>
