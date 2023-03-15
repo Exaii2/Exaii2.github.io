@@ -17,29 +17,47 @@ html body {
 	background-repeat: no-repeat;
 	background-size: cover;
 
-	/* width: 100vw; */
-	height: 100vh;
+	/* width: 100vw; 
+	height: 100vh; 
+	min-height: 50vh;*/
 	top: 0;
 	left: 0;
 }
 
-.parallax-background {
+.parallax-intro {
+	background-image: url('img/Render.png');
 	background-image: linear-gradient(to bottom right, #42f, #1f5);
+}
 
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	
-	width: 100vw;
-	height: 100vh;
-	top: 0;
-	left: 0;
+.parallax-blender {
+	background-image: url('img/Render.png');
+	background-image: linear-gradient(to top, #55618f, #3b4b4e);
+}
+
+.parallax-unity {
+	background-image: url('img/Render.png');
+	background-image: linear-gradient(to bottom left, #56489f, #5aaf72);
+}
+
+.parallax-about {
+	background-image: url('img/Render.png');
+	background-image: linear-gradient(to top, #55618f, #3b4b4e);
+}
+
+.parallax-footer {
+	background-image: url('img/Render.png');
+	background-image: linear-gradient(to bottom right, #655f85, #82a98d);
 }
 
 .divider {
-	height: 0.5em;
-	background-image: linear-gradient(to bottom left, #345, #234);
+	height: 0.25em;
+	background-image: linear-gradient(to bottom, #345, #234);
+	box-shadow: 0 -1px 0.5rem #345, 0 1px 0.5rem #234;
+	position: relative;
+	z-index: 1000;
+	/*
+	box-shadow: 0 1rem 3rem #345a, 0 1rem 3rem #234a !important;
+	*/
 }
 
 /*
@@ -140,6 +158,20 @@ html body {
 }
 .margin-top-lg {
 	margin-top: 20em;
+}
+
+.img-fit {
+	/*
+	width: 100%;
+	*/
+}
+
+.img-halfmax {
+	max-width: 50%;
+	text-align: center;
+	display: block;
+	margin: auto;
+	padding: auto;
 }
 
 footer {

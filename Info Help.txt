@@ -1,0 +1,11 @@
+I create:
+CHARACTERS
+ENVIRONMENTS
+VISUAL EFFECTS
+3D PRINTS
+
+For medium gap:
+margin-bottom-m 
+
+For BG
+parallax
