@@ -194,8 +194,16 @@ html body {
 
 
 .links-youtube {
+	height: 250px;
+
+	border: 0px solid black;
+    border-radius: 50px;
+	background-color: #171717;
 }
 .links-youtube .icon {
+	max-width: 150px;
+	margin-bottom: 68px;
+	margin-top: 68px;
 }
 
 
