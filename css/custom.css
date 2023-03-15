@@ -160,6 +160,45 @@ html body {
 	margin-top: 20em;
 }
 
+.links-icon {
+	height: 250px;
+	width: 250px;
+	display: inline-block;
+	
+}
+.links-icon .icon {
+	margin: auto;
+
+}
+
+.links-artstation {
+	height: 240px; /* whyy can't this icon be 150x150 */
+}
+.links-artstation .icon {
+	border: 0px solid black;
+    border-radius: 50px;
+}
+
+.links-discord {
+	height: 250px;
+
+	border: 0px solid black;
+    border-radius: 50px;
+	background-color: #171717;
+}
+.links-discord .icon {
+	max-width: 150px;
+	margin-bottom: 68px;
+	margin-top: 68px;
+}
+
+
+.links-youtube {
+}
+.links-youtube .icon {
+}
+
+
 .img-fit {
 	/*
 	width: 100%;
