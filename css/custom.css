@@ -26,27 +26,27 @@ html body {
 
 .parallax-intro {
 	background-image: url('img/Render.png');
-	background-image: linear-gradient(to bottom right, #42f, #1f5);
+	background-image: linear-gradient(to top, #1d3076, #5b797e);
 }
 
 .parallax-blender {
 	background-image: url('img/Render.png');
-	background-image: linear-gradient(to top, #55618f, #3b4b4e);
+	background-image: linear-gradient(to bottom right, #42f, #1f5);
 }
 
 .parallax-unity {
 	background-image: url('img/Render.png');
-	background-image: linear-gradient(to bottom left, #56489f, #5aaf72);
+	background-image: linear-gradient(to top, #55618f, #3b4b4e);
+}
+
+.parallax-links {
+	background-image: url('img/Render.png');
+	background-image: linear-gradient(to top left, #33209b, #08d543);
 }
 
 .parallax-about {
 	background-image: url('img/Render.png');
 	background-image: linear-gradient(to top, #55618f, #3b4b4e);
-}
-
-.parallax-footer {
-	background-image: url('img/Render.png');
-	background-image: linear-gradient(to bottom right, #655f85, #82a98d);
 }
 
 .divider {
