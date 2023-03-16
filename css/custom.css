@@ -168,7 +168,7 @@ html body {
 }
 .links-icon .icon {
 	margin: auto;
-
+	/* height: 150px; */	
 }
 
 .links-artstation {
@@ -180,7 +180,6 @@ html body {
 }
 
 .links-discord {
-	height: 150px;
 	border: 0px solid black;
     border-radius: 50px;
 	background-color: #171717;
@@ -193,16 +192,14 @@ html body {
 
 
 .links-youtube {
-	height: 250px;
-
 	border: 0px solid black;
     border-radius: 50px;
 	background-color: #171717;
 }
 .links-youtube .icon {
-	max-width: 150px;
-	margin-bottom: 68px;
-	margin-top: 68px;
+	max-width: 85px;
+	margin-bottom: 45px;
+	margin-top: 45px;
 }
 
 
