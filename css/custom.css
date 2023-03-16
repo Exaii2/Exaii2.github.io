@@ -161,8 +161,8 @@ html body {
 }
 
 .links-icon {
-	height: 250px;
-	width: 250px;
+	height: 150px;
+	width: 150px;
 	display: inline-block;
 	
 }
@@ -172,7 +172,7 @@ html body {
 }
 
 .links-artstation {
-	height: 240px; /* whyy can't this icon be 150x150 */
+	height: 140px; /* whyy can't this icon be 150x150 */
 }
 .links-artstation .icon {
 	border: 0px solid black;
@@ -180,16 +180,15 @@ html body {
 }
 
 .links-discord {
-	height: 250px;
-
+	height: 150px;
 	border: 0px solid black;
     border-radius: 50px;
 	background-color: #171717;
 }
 .links-discord .icon {
-	max-width: 150px;
-	margin-bottom: 68px;
-	margin-top: 68px;
+	max-width: 80px;
+	margin-bottom: 45px;
+	margin-top: 45px;
 }
 
 
