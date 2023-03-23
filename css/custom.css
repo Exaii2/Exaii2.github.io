@@ -6,6 +6,10 @@ html body {
 	font-family: Verdana,Geneva,sans-serif; 
 }
 
+.container {
+	max-width: 900px;
+}
+
 .parallax {
 	/*
 	background-image: url('img/Render.png');
@@ -25,60 +29,77 @@ html body {
 }
 
 .parallax-intro {
+	/*
 	background-image: url('img/Render.png');
+	*/
+	
 	background-image: linear-gradient(to top, #1d3076, #5b797e);
 }
 
-.parallax-blender {
+
+.parallax-about {
+	background-image: url('../img/Backgrounds/Env_BioMech_Render_2.png');
+	/*
+	background-image: linear-gradient(to top, #55618f, #3b4b4e);
+	*/
+}
+
+.parallax-skillset {
+	/*
 	background-image: url('img/Render.png');
+	*/
+	
+	background-image: linear-gradient(to top, #55618f, #3b4b4e);
+}
+
+.parallax-blender {
 	background-image: linear-gradient(to bottom right, #42f, #1f5);
+	background-image: url('../img/Backgrounds/Render_Showcase_3.png');
+	/*
+	filter: grayscale(50%);
+	*/
+	/*
+	background-image: linear-gradient(to bottom right, #42f, #1f5);
+	*/
 }
 
 .parallax-unity {
+	/*
 	background-image: url('img/Render.png');
+	*/
+
 	background-image: linear-gradient(to top, #55618f, #3b4b4e);
 }
 
 .parallax-links {
-	background-image: url('img/Render.png');
+	background-image: url('../img/Backgrounds/Env_Monolithic_PreRender_2.png');
+	/*
+	filter: grayscale(50%);
+	*/
+	/*
 	background-image: linear-gradient(to top left, #33209b, #08d543);
+	*/
 }
 
-.parallax-about {
-	background-image: url('img/Render.png');
+.parallax-career {
+	/*
+	background-image: url('../img/Backgrounds/Env_BioMech_Render_2.png');
+	*/
+
 	background-image: linear-gradient(to top, #55618f, #3b4b4e);
 }
 
+
 .divider {
-	height: 0.25em;
+	height: 0.2em;
 	background-image: linear-gradient(to bottom, #345, #234);
-	box-shadow: 0 -1px 0.5rem #345, 0 1px 0.5rem #234;
+	box-shadow: 0 -1px 0.5rem #345, 0 1px 0.5rem #345;
 	position: relative;
 	z-index: 1000;
 	/*
 	box-shadow: 0 1rem 3rem #345a, 0 1rem 3rem #234a !important;
 	*/
 }
-
-/*
-.parallax-work {
-	background-image: linear-gradient(to bottom left, #221, #122);
-	height: 100% ; 
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.bottom-bg {
-	background-image: linear-gradient(to bottom right, #42f, #1f5);
-	height: 100% ; 
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-*/
 
 .bg-dark {
 	background-image: linear-gradient(to bottom left, #304055aa, #253545aa);
@@ -122,28 +143,29 @@ html body {
 .padding-bottom-sm {
 	padding-bottom: 2em;
 }
-.padding-bottom-m {
-	padding-bottom: 10em;
+.padding-bottom-md {
+	padding-bottom: 4em;
 }
 .padding-bottom-lg {
-	padding-bottom: 20em;
+	padding-bottom: 10em;
 }
 
 .padding-top-sm {
 	padding-top: 2em;
 }
-.padding-top-m {
-	padding-top: 10em;
+.padding-top-md {
+	padding-top: 4em;
 }
 .padding-top-lg {
-	padding-top: 20em;
+	padding-top: 10em;
 }
 
 
+/*
 .margin-bottom-sm {
 	margin-bottom: 2em;
 }
-.margin-bottom-m {
+.margin-bottom-md {
 	margin-bottom: 10em;
 }
 .margin-bottom-lg {
@@ -153,12 +175,13 @@ html body {
 .margin-top-sm {
 	margin-top: 2em;
 }
-.margin-top-m {
+.margin-top-md {
 	margin-top: 10em;
 }
 .margin-top-lg {
 	margin-top: 20em;
 }
+*/
 
 .links-icon {
 	height: 150px;
@@ -204,9 +227,7 @@ html body {
 
 
 .img-fit {
-	/*
 	width: 100%;
-	*/
 }
 
 .img-halfmax {
@@ -222,6 +243,16 @@ footer {
 }
 
 /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .img-halfmax {
+	max-width: 100%;
+	text-align: center;
+	display: block;
+	margin: auto;
+	padding: auto;
+  }
+}
+
 @media only screen and (max-device-width: 1366px) {
   .parallax {
     background-attachment: scroll;
