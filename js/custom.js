@@ -21,7 +21,8 @@ function initUnityLoad() {
 	iframeHolder = $("#unity-loader");
 	
 	document.getElementById("loadWebGL").addEventListener("click", function() {
-		var iframeLink = document.createElement("iframe");
+		// var iframeLink = document.createElement("iframe");
+		var iframeLink = "unity/index.html";
 
 		var iframe = $("<iframe src='" + iframeLink + "'></iframe>");
 		iframeHolder.append(iframe);

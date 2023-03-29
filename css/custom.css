@@ -10,10 +10,8 @@ html body {
 	max-width: 900px;
 }
 
+
 .parallax {
-	/*
-	background-image: url('img/Render.png');
-	*/
 	background-image: linear-gradient(to bottom right, #42f, #1f5);
 
 	background-attachment: fixed;
@@ -21,11 +19,11 @@ html body {
 	background-repeat: no-repeat;
 	background-size: cover;
 
-	/* width: 100vw; 
-	height: 100vh; 
-	min-height: 50vh;*/
+	/*
 	top: 0;
 	left: 0;
+	min-height: 500px;
+	*/
 }
 
 .parallax-intro {
@@ -123,6 +121,11 @@ html body {
 	margin-right: auto;
 	transition: 2s;
 	text-align:center;
+}
+
+.unity-loader iframe {
+	min-width: 100%;
+	min-height: 70vh;
 }
 
 .unity-loader.loaded {
