@@ -1,9 +1,14 @@
 html body {
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
 	
 	font-family: Verdana,Geneva,sans-serif; 
+}
+
+/*hacked solutions*/
+.bg-dark h2 {
+    font-size: calc(1.225rem + .9vw)!important;
 }
 
 .container {
@@ -31,7 +36,7 @@ html body {
 	background-image: url('img/Render.png');
 	*/
 	
-	background-image: linear-gradient(to top, #1d3076, #5b797e);
+	background-image: linear-gradient(to top, #ab0e32, #6d8f95);
 }
 
 
@@ -47,7 +52,7 @@ html body {
 	background-image: url('img/Render.png');
 	*/
 	
-	background-image: linear-gradient(to top, #55618f, #3b4b4e);
+	background-image: linear-gradient(to top, #55618f, #1c5a44);
 }
 
 .parallax-blender {
@@ -66,7 +71,7 @@ html body {
 	background-image: url('img/Render.png');
 	*/
 
-	background-image: linear-gradient(to top, #55618f, #3b4b4e);
+	background-image: linear-gradient(to top, #2641a9, #174148);
 }
 
 .parallax-links {
@@ -87,6 +92,9 @@ html body {
 	background-image: linear-gradient(to top, #55618f, #3b4b4e);
 }
 
+.shadow-custom {
+	box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
 
 .divider {
 	height: 0.2em;
@@ -187,8 +195,8 @@ html body {
 */
 
 .links-icon {
-	height: 150px;
-	width: 150px;
+	height: 100px;
+	width: 100px;
 	display: inline-block;
 	
 }
@@ -198,7 +206,7 @@ html body {
 }
 
 .links-artstation {
-	height: 140px; /* whyy can't this icon be 150x150 */
+	height: 95px; /* whyy can't this icon be 150x150 */
 }
 .links-artstation .icon {
 	border: 0px solid black;
@@ -211,9 +219,20 @@ html body {
 	background-color: #171717;
 }
 .links-discord .icon {
-	max-width: 80px;
-	margin-bottom: 45px;
-	margin-top: 45px;
+    max-width: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.links-email {
+	border: 0px solid black;
+    border-radius: 50px;
+	background-color: #171717;
+}
+.links-email {
+	font-size: 28pt;
+    margin: auto;
+	padding-top: 12px;
 }
 
 
@@ -245,6 +264,10 @@ footer {
 	background-image: linear-gradient(to bottom, #345, #234);
 }
 
+.pfp-scale {
+	width: 15%;
+}
+
 /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
 @media only screen and (max-device-width: 1366px) {
   .img-halfmax {
@@ -254,6 +277,12 @@ footer {
 	margin: auto;
 	padding: auto;
   }
+}
+
+@media only screen and (max-device-width: 1366px) {
+	.pfp-scale {
+		width: 100%;
+	}
 }
 
 @media only screen and (max-device-width: 1366px) {

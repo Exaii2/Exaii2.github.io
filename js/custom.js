@@ -7,12 +7,27 @@ window.onload = function() {
 	const parallax = document.querySelector("#parallax_1");
 	// webGLInit(); // TODO: Clean up webgl code
 
-	initUnityLoad(); // TODO: Build Unity Web Showcase.
+	initUnityLoad(); // Build Unity Web Showcase.
 
-	// Parallax script - else standard css parallax behaviour.
-	parallaxX = 0;
-	parallaxY = 0;
-	// backgroundImageShift(); // TODO: Fix background shift.
+	setTimeout(function() {
+	afterLoadM(); }, 1001);
+}
+
+function afterLoadM()
+{
+	// Simple bot crawler prevention.
+	var u = 'voegtle.adrian',
+    d = 'gm',
+	e = 'ail',
+	pre = 'm',
+	pre2 = 'to:';
+
+	ma1il = document.querySelector("#cont-m");
+	ma2il = document.querySelector("#cont-m-2");
+
+	ma1il.href = pre + e + pre2 + u + '@' + d + e + '.com';
+	ma2il.href = pre + e + pre2 + u + '@' + d + e + '.com';
+	ma2il.innerHTML = u + '@' + d + e + '.com';
 }
 
 /// Use this to load my unity web showcase
@@ -31,23 +46,9 @@ function initUnityLoad() {
 	});
 }
 
-/// Not yet fully implemented
-/// Will translate the background image parallax - once correctly implemented.
-function backgroundImageShift() {
-	parallax.addEventListener("mousemove",
-		function(e){
-			// TODO: Extract current position
-			var x = ((e.clientX)*parallaxX)+"px";
-			var y = ((e.clientY)*parallaxY)+"px";
-			parallax.style.backgroundPosition = x + " " + y;
-
-		});
-}
 
 /*
 // THIS PART IS FOR WEBGL.
-// THIS IS NOT YET IMPLEMENTED FOR PORTFOLIO.
-
 function webGLInit()
 {
 	const canvas = document.querySelector("#glCanvas");
