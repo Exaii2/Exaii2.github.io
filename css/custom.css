@@ -10,6 +10,10 @@ html body {
 .bg-dark h2 {
     font-size: calc(1.225rem + .9vw)!important;
 }
+.bg-transparent h2 {
+    font-size: calc(1.225rem + .9vw)!important;
+}
+
 
 .container {
 	max-width: 900px;
